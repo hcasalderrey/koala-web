@@ -1,0 +1,30 @@
+---
+import Footer from "@components/Footer.astro";
+import Header from "../components/Header.astro";
+import "@fontsource-variable/sora";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/Koala.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>KOALA growshop</title>
+  </head>
+  <body class="bg-gradient-to-r from-[#E6C767] to-emerald-200 to-95%">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  .letra {
+    font-family: system-ui, sans-serif;
+  }
+
+  body {
+    font-family: "Sora Variable", sans-serif;
+  }
+</style>

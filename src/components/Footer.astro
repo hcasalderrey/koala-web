@@ -1,0 +1,32 @@
+---
+import WhatsappIcon from "./svg/WhatsappIcon.astro"; 
+import InstagramIcon from "./svg/InstagramIcon.astro";
+---
+
+<footer class="p-4 sticky  rounded-lg   md:px-6 md:py-8 container mx-auto items-center">
+    <div class="sm:flex  items-center sm:justify-center md:justify-between">
+        <a href="./" class="flex items-center justify-center mb-4 sm:mb-0">
+            <img src="./logo.webp" class="mr-4 h-12" alt="Logo Koala">
+            
+            <span class="self-center text-xl font-bold whitespace-nowrap ">Koala</span>
+            <span class="text-sm ml-2 mt-1 font-semibold"> growshop</span>
+        </a>
+        <ul class="flex flex-wrap items-center justify-center mb-6 sm:mb-0">
+            <li>
+                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 ">
+                    <WhatsappIcon class="w-7 h-7"/>
+
+                </a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 ">
+                    <InstagramIcon class="w-10 h-10"/>
+                </a>
+            </li>
+             
+        </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-gray-500 sm:text-center ">© 2024 <a href="https://hcsoluciones.com.ar" target="_blank" class="hover:underline">HC Soluciones</a>. 
+</span>
+</footer>
